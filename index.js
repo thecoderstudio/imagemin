@@ -1,5 +1,3 @@
-import {union} from 'path-union'
-
 'use strict';
 const fs = require('fs');
 const path = require('path');
@@ -9,6 +7,7 @@ const makeDir = require('make-dir');
 const pify = require('pify');
 const pPipe = require('p-pipe');
 const replaceExt = require('replace-ext');
+const untion = require('path-untion');
 
 const fsP = pify(fs);
 
