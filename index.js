@@ -11,7 +11,7 @@ const replaceExt = require('replace-ext');
 const fsP = pify(fs);
 
 const handleFile = (input, output, opts) => fsP.readFile(input).then(data => {
-	const dest = output ? path.join(output, path.basename(input)) : null;
+  const dest = output ? union(path.resolve(output), path.resolve(input)) : null;
 
 	if (opts.plugins && !Array.isArray(opts.plugins)) {
 		throw new TypeError('The plugins option should be an `Array`');
