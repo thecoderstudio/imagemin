@@ -1,3 +1,5 @@
+import {union} from 'path-union'
+
 'use strict';
 const fs = require('fs');
 const path = require('path');
