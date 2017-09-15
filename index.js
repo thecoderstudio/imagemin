@@ -7,7 +7,7 @@ const makeDir = require('make-dir');
 const pify = require('pify');
 const pPipe = require('p-pipe');
 const replaceExt = require('replace-ext');
-const untion = require('path-union');
+const union = require('path-union').union;
 
 const fsP = pify(fs);
 
